@@ -13,5 +13,8 @@ def sockMerchant(n, ar):
   
   return pair_cnt
 
-print(sockMerchant(7, [1,2,1,2,1,3,2]))
-print(sockMerchant(9, [10,20,20,10,10,30,50,10,20]))
+def numPairs(ar):
+  print("No. of pairs in", ar, "=", sockMerchant(len(ar), ar))
+
+numPairs([1,2,1,2,1,3,2])
+numPairs([10,20,20,10,10,30,50,10,20])
